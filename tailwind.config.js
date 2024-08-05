@@ -17,6 +17,9 @@ module.exports = {
         h2: "18px",
         h3: "12px",
         h4: "7.2px",
+        h5: "6.3px",
+        h6: "0.5rem",
+        "ws-40": "40px",
       },
       fontWeight: {
         "nav-links": "400",
@@ -26,6 +29,9 @@ module.exports = {
         h2: "400",
         h3: "400",
         h4: "400",
+        h5: "400",
+        h6: "400",
+        span: "600",
       },
       lineHeight: {
         "nav-links": "20px",
@@ -35,12 +41,16 @@ module.exports = {
         h2: "24px",
         h3: "16px",
         h4: "12px",
+        h5: "9px",
+        h6: "3px",
       },
       letterSpacing: {
         h2: "0.5px",
         h3: "0.25px",
         "h3-smaller": "0.09px",
         h4: "0.15px",
+        h5: "0.11px",
+        h6: "0.11px",
       },
       backgroundImage: {
         "custom-radial-gradient":
