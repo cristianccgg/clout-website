@@ -650,6 +650,10 @@ video {
   z-index: -10;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -748,6 +752,18 @@ video {
 
 .mt-\[96px\] {
   margin-top: 96px;
+}
+
+.me-\[104px\] {
+  margin-inline-end: 104px;
+}
+
+.ms-\[104px\] {
+  margin-inline-start: 104px;
+}
+
+.ms-\[70px\] {
+  margin-inline-start: 70px;
 }
 
 .block {
@@ -924,6 +940,10 @@ video {
 
 .w-\[254px\] {
   width: 254px;
+}
+
+.w-\[223px\] {
+  width: 223px;
 }
 
 .rotate-\[6deg\] {
