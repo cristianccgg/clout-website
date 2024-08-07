@@ -25,6 +25,7 @@ module.exports = {
         h3: "12px",
         h4: "7.2px",
         h5: "6.3px",
+        chimeVerySmall: "5.4px",
         h6: "0.5rem",
         "ws-40": "40px",
       },
