@@ -1,3 +1,31 @@
+/* En src/input.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "ws_corsiana";
+  src: url("/src/fonts/WS_CORSICANA.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ws_curio";
+  src: url("/src/fonts/WS_CURIO.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ws_modernephemera";
+  src: url("/src/fonts/WS_MODERNEPHEMERA.otf") format("opentype");
+}
+
+.font-modernephemera {
+  font-family: "ws_modernephemera", sans-serif;
+}
+
+.font-corsiana {
+  font-family: "ws_corsiana", sans-serif;
+}
+
+.font-curio {
+  font-family: "ws_curio", sans-serif;
+}

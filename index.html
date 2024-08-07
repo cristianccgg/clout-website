@@ -3,77 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/input.css" />
   </head>
   <body>
-    <nav
-      class="bg-very-light-blue bg-opacity-[35%] relative flex items-center justify-between text-main-blue font-nav-links px-[16px] py-[8px] md:px-[64px] md:py-[16px]"
-    >
-      <button id="hamb-btn" class="md:hidden">
-        <img
-          class="h-[11.27px] w-[17px] block"
-          src="src/images/hamb-icon.png"
-          alt="hamburger button"
-        />
-      </button>
-
-      <img
-        class="w-[26px] h-[26px] md:w-[52.62px] md:h-[52.62px]"
-        src="src/images/logo.png"
-        alt="logo"
-      />
-      <div
-        id="nav-links"
-        class="hidden p-5 md:p-0 bg-very-light-blue bg-opacity-[35%] absolute top-full left-0 w-full md:flex md:static md:ms-[48px] md:justify-between md:top-auto md:bg-transparent md:space-x-[16px]"
-      >
-        <div
-          class="flex flex-col md:flex-row text-center md:justify-between w-full"
-        >
-          <div class="flex flex-col md:flex-row">
-            <a class="text-nav-links block px-4 py-2" href="">FOR BRANDS</a>
-            <a class="text-nav-links block px-4 py-2" href=""
-              >FOR INFLUENCERS</a
-            >
-          </div>
-          <button
-            class="text-btns block px-4 py-2 self-center font-nav-links border-main-blue border-2 rounded-full"
-          >
-            CONTACT US
-          </button>
-        </div>
-      </div>
-      <img
-        class="w-[44px] h-[28px] md:hidden"
-        src="src/images/calendar-icon.png"
-        alt="calendar icon"
-      />
-    </nav>
+    <div id="navbar-container"></div>
 
     <section class="bg-custom-radial-gradient space-y-[84.94px]">
       <div
         class="w-[372px] mx-auto pt-[48px] flex flex-col items-start gap-[24px]"
       >
-        <h1 class="text-headers text-header-color font-headers leading-headers">
-          Progress your passions into profits
+        <h1
+          class="text-headers font-corsiana text-header-color font-headers leading-headers"
+        >
+          Progress <br />
+          your passions into profits
         </h1>
-        <p class="text-p text-p-color font-p leading-p">
+        <p class="text-p font-jost text-p-color font-p leading-p">
           Clout brings brands and influencers together. We give brands a
           seamless, hands-off approach to collaborating with influencers, while
           giving influencers the freedom to monetize their network on their
           terms. Say goodbye to the hassle of finding the perfect marketing
           match, and say hello to Clout.
         </p>
-        <div class="flex gap-[16px] text-white">
-          <button
-            class="text-btns font-btns leading-btns bg-main-blue rounded-full w-[178px] h-[44.06px]"
-          >
-            FOR BRANDS
-          </button>
-          <button
-            class="text-btns font-btns leading-btns bg-main-blue rounded-full w-[178px] h-[44.06px]"
-          >
-            FOR INFLUENCERS
-          </button>
+        <div class="flex gap-[16px] text-white font-modernephemera">
+          <a href="brands.html">
+            <button
+              class="text-btns font-btns leading-btns bg-main-blue rounded-full w-[178px] h-[44.06px]"
+            >
+              FOR BRANDS
+            </button>
+          </a>
+          <a href="influencers.html">
+            <button
+              class="text-btns font-btns leading-btns bg-main-blue rounded-full w-[178px] h-[44.06px]"
+            >
+              FOR INFLUENCERS
+            </button>
+          </a>
         </div>
       </div>
       <img
@@ -100,11 +75,22 @@
       <div
         class="bg-white flex py-[12px] ps-[16px] w-[360px] h-[88px] gap-[16px] rounded-[24px] mx-auto"
       >
-        <img src="src/images/icons/List item/icon1.png" alt="" />
+        <img
+          class="w-[46px]"
+          src="src/images/icons/List item/icon1.png"
+          alt=""
+        />
         <div>
-          <h2 class="text-h2 font-h2 leading-h2 tracking-h2">Craft a Deal</h2>
-          <h3 class="text-h3 font-h3 leading-h3 tracking-h3">
-            Create a Campaign that's 100% aligned with your goals and metrics
+          <h2
+            class="text-h2 font-h2 leading-h2 tracking-h2 font-modernephemera"
+          >
+            Craft a Deal
+          </h2>
+          <h3
+            class="text-h3 font-h3 leading-h3 tracking-h3 font-jost pe-[24px]"
+          >
+            Create a Campaign that's 100% <br />aligned with your goals and
+            metrics
           </h3>
         </div>
       </div>
@@ -112,15 +98,17 @@
         class="bg-white mt-[80px] flex items-center py-[12px] ps-[16px] w-[360px] h-[88px] gap-[16px] rounded-[24px] mx-auto"
       >
         <img
-          class="w-[48px] h-[32px]"
+          class="w-[48px]"
           src="src/images/icons/List item/Leading element.png"
           alt=""
         />
         <div>
-          <h2 class="text-h2 font-h2 leading-h2 tracking-h2">
+          <h2
+            class="text-h2 font-h2 leading-h2 tracking-h2 font-modernephemera"
+          >
             Seamless collab with Influencers
           </h2>
-          <h3 class="text-h3 font-h3 leading-h3 tracking-h3">
+          <h3 class="text-h3 font-h3 leading-h3 tracking-h3 font-jost">
             Clout shares your Deal with our Influencer network, so you can focus
             on performance
           </h3>
@@ -134,15 +122,20 @@
             alt=""
           />
           <div
-            class="bg-white ps-[9.6px] pt-[9.6px] flex gap-[9.6px] absolute top-[156.5px] ms-[70px] rounded-[24px] w-[216px] h-[82.8px]"
+            class="bg-white ps-[9.6px] py-[14.7px] pe-[4.8px] flex gap-[9.6px] absolute top-[156.5px] ms-[70px] rounded-[7.2px] w-[216px] h-[82.8px]"
           >
-            <div class="">
-              <h3 class="text-h3 font-h3 leading-h3 tracking-h3-smaller">
+            <div>
+              <h3
+                class="text-h3 font-h3 leading-h3 tracking-h3-smaller font-modernephemera"
+              >
                 Chime (BANK)
               </h3>
-              <h4 class="text-h4 font-h3 leading-h4 tracking-h3">
-                Clout shares your Deal with our Influencer network, so you can
-                focus on performance
+              <h4
+                class="text-h4 font-[400] leading-[12px] text-[#1D1B20] tracking-[0.15px] font-jost"
+              >
+                Chime is the banking app that has your back. Keep your money
+                safe with security features, overdraft up to $200 fee-free*,
+                and...
               </h4>
             </div>
             <img src="src/images/Frame 631666.png" alt="" />
@@ -157,34 +150,42 @@
           <div
             class="bg-white flex flex-col gap-[9.6px] absolute top-[54.8px] ms-[151px] rounded-[24px] w-[162px] h-[301px]"
           >
-            <div class="flex flex-col items-center">
-              <h3 class="text-h3 font-h3 leading-h3 tracking-h3-smaller">
+            <div class="flex flex-col items-center overflow-hidden">
+              <h3
+                class="text-[16.2] font-modernephemera font-h3 leading-h3 tracking-h3-smaller"
+              >
                 Chime (BANK)
               </h3>
               <img src="src/images/Frame 631668.png" alt="icons" />
               <img src="src/images/Media.png" alt="icon-C" />
-              <h5 class="text-h5 font-h5 leading-h5 tracking-h5">
+              <h5 class="text-[6.3px] font-jost font-h5 leading-h5 tracking-h5">
                 Created: July 9th, 2024
               </h5>
-              <h5 class="text-h5 font-h5 leading-h5 tracking-h5">
+              <h5 class="text-[6.3px] font-jost font-h5 leading-h5 tracking-h5">
                 Expires: July 16th, 2024
               </h5>
-              <h6 class="text-h6 font-h6 leading-h6 tracking-h6">
+              <h6 class="text-[5px] font-jost text-[#1D1B20]">
                 Chime is the banking app that has your back. Keep your money
                 safe with security features, overdraft up to $200 fee-free*, and
                 get paid early with direct deposit^, with no monthly fees‡.
               </h6>
-              <h6 class="text-h6 font-h6 leading-h6 tracking-h6">
+              <h6
+                class="text-[5.4px] font-jost text-[#1D1B20] leading-[9px] tracking-[0.11px]"
+              >
                 Chime is a financial technology company, not a bank. Banking
                 services provided by The Bancorp Bank or Stride Bank, N.A.;
                 Members FDIC
               </h6>
-              <h6 class="text-h6 font-h6 leading-h6 tracking-h6">
+              <h6
+                class="text-[5.4px] font-jost text-[#1D1B20] leading-[9px] tracking-[0.11px]"
+              >
                 TRUSTED BY MILLIONSStay in control of your money with instant
                 transaction and daily balance alerts. Plus, enable two-factor
                 authentication and block your card in a single tap.
               </h6>
-              <h6 class="text-h6 font-h6 leading-h6 tracking-h6">
+              <h6
+                class="text-[5.4px] font-jost text-[#1D1B20] leading-[9px] tracking-[0.11px]"
+              >
                 OVERDRAFT UP TO $200*When your balance is running low, the last
                 thing you need is an overdraft fee. Eliible members on Chime can
                 overdraft u
@@ -196,15 +197,19 @@
           class="bg-white mt-[170.25px] flex py-[12px] ps-[16px] w-[360px] h-[88px] gap-[16px] rounded-[24px] mx-auto"
         >
           <img
+            class="w-[48px] h-[64px]"
             src="src/images/icons/List item/List item/Leading element.png"
             alt=""
           />
           <div>
-            <h2 class="text-h2 font-h2 leading-h2 tracking-h2">
+            <h2
+              class="text-h2 font-h2 leading-h2 tracking-h2 font-modernephemera"
+            >
               Discover lucrative Brand Deals
             </h2>
-            <h3 class="text-h3 font-h3 leading-h3 tracking-h3">
-              Find deals that resonate with your audience and your content style
+            <h3 class="text-h3 font-h3 leading-h3 tracking-h3 font-jost">
+              Find deals that resonate with your <br />
+              audience and your content style
             </h3>
           </div>
         </div>
@@ -217,10 +222,12 @@
             alt=""
           />
           <div>
-            <h2 class="text-h2 font-h2 leading-h2 tracking-h2">
+            <h2
+              class="text-h2 font-h2 leading-h2 tracking-h2 font-modernephemera"
+            >
               Share, Earn, Succeed
             </h2>
-            <h3 class="text-h3 font-h3 leading-h3 tracking-h3">
+            <h3 class="text-h3 font-h3 leading-h3 tracking-h3 font-jost">
               Monetize your influence with performance rewards that are the
               perfect fit for you
             </h3>
@@ -234,75 +241,62 @@
         class="w-[372px] mx-auto pt-[48px] flex flex-col items-center text-center gap-[24px]"
       >
         <h1
-          class="text-nav-links text-header-color font-headers leading-headers"
+          class="text-nav-links text-nowrap text-header-color font-headers leading-[32px] font-corsiana"
         >
-          Scout, Connect & Monetize with Clout
+          Scout, Connect & <br />Monetize with Clout
         </h1>
-        <p class="text-p text-p-color font-p leading-p">
-          Get direct attribution with Clout and unlock untapped networks. We’re
-          laser focused on your success — because when you win, we win.
+        <p
+          class="text-p text-p-color font-p leading-p font-jost text-center text-nowrap"
+        >
+          Get direct attribution with Clout and unlock untapped networks. <br />
+          We’re laser focused on your success — because when you win,<br />
+          we win.
         </p>
       </div>
-      <div class="pt-[32px] space-y-[43px]">
+      <div class="mt-[32px] space-y-[43px]">
         <div
-          class="bg-white rounded-[11.84px] p-[32px] w-[380px] h-[248.06px] mx-auto"
+          class="bg-white rounded-[11.84px] p-[32px] flex flex-col w-[380px] h-[248.06px] mx-auto"
         >
-          <h1 class="text-ws-40">BRANDS</h1>
-          <p class="text-p leading-nav-links mt-[12px] mb-[32px]">
-            <span class="font-span text-p text-p-color">Create your deal:</span>
+          <h1
+            class="text-[40px] leading-[36px] mb-[12px] font-modernephemera text-main-blue"
+          >
+            BRANDS
+          </h1>
+          <p class="text-p leading-[20px] font-[400] font-jost text-p-color">
+            <span class="font-[600] leading-[20px]">Create your deal:</span>
             Set your budget and attribution rates, and let us do the rest. We’ll
             connect you with influencers for your campaign, hassle-free.
           </p>
           <button
-            class="border-2 border-main-blue rounded-full w-[316px] h-[44.06px]"
+            class="border-2 border-main-blue rounded-full text-[20px] font-modernephemera mt-[32px] w-[316px] h-[44.06px] text-main-blue"
           >
             Pay for performance.
           </button>
         </div>
         <div
-          class="bg-white rounded-[11.84px] p-[32px] w-[380px] h-[248.06px] mx-auto"
+          class="bg-white rounded-[11.84px] p-[32px] flex flex-col w-[380px] h-[248.06px] mx-auto"
         >
-          <h1 class="text-ws-40">BRANDS</h1>
-          <p class="text-p leading-nav-links mt-[12px] mb-[32px]">
-            <span class="font-span text-p text-p-color">Create your deal:</span>
-            Set your budget and attribution rates, and let us do the rest. We’ll
-            connect you with influencers for your campaign, hassle-free.
+          <h1
+            class="text-[40px] leading-[36px] mb-[12px] font-modernephemera text-main-blue"
+          >
+            INFLUENCERS
+          </h1>
+          <p class="text-p leading-[20px] font-[400] font-jost text-p-color">
+            <span class="font-[600]">Claim your deal:</span>Browse the Clout
+            marketplace, copy any links relevant to your audience, and share
+            with your followers.
           </p>
           <button
-            class="border-2 border-main-blue rounded-full w-[316px] h-[44.06px]"
+            class="border-2 border-main-blue rounded-full text-[20px] font-modernephemera mt-[32px] w-[316px] h-[44.06px] text-main-blue"
           >
-            Pay for performance.
+            Monetize your network
           </button>
         </div>
       </div>
     </section>
-    <section class="bg-custom-radial-gradient py-[96px] pb-[51px]">
-      <div
-        class="w-[372px] mx-auto pt-[48px] flex flex-col items-center text-center gap-[24px]"
-      >
-        <h1
-          class="text-nav-links text-header-color font-headers leading-headers"
-        >
-          Let’s connect
-        </h1>
-        <p class="text-p text-p-color font-p leading-p">
-          Reach out to host a deal or join our growing Influencer community
-        </p>
-      </div>
-      <form
-        class="flex flex-col items-center gap-[16px] w-[358px] mx-auto mt-[40px]"
-        action="#"
-      >
-        <input class="w-full" type="text" placeholder="Name" />
-        <input class="w-full" type="text" placeholder="Email" />
-        <input class="w-full" type="text" placeholder="Note" />
-        <button>CONTACT US</button>
-        <p>
-          By signing up you agree to our terms of service and privacy policy
-        </p>
-      </form>
-    </section>
-    <footer></footer>
+
+    <section id="form-container"></section>
+    <section id="footer-container"></section>
 
     <script src="main.js"></script>
   </body>

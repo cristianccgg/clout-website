@@ -3,11 +3,18 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./*.html"],
   theme: {
     extend: {
+      fontFamily: {
+        corsiana: ["ws_corsiana", "sans-serif"],
+        curio: ["ws_curio", "sans-serif"],
+        modernephemera: ["ws_modernephemera", "sans-serif"],
+        jost: ["jost", "sans-serif"],
+      },
       colors: {
         "very-light-blue": "#e0f7fa",
         "main-blue": "#28587B",
         "header-color": "#565995",
         "p-color": "#49454F",
+        cyanBlue: "#48A9D1",
       },
       fontSize: {
         "nav-links": "24px",
