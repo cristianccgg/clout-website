@@ -130,13 +130,29 @@
           Input the size of your network, and we'll provide an estimate of your
           potential earnings using the Clout app!
         </h2>
-        <div class="mt-[96px]">
+        <div
+          class="mt-[96px] w-[380px] h-[166px] flex flex-col justify-between items-center"
+        >
           <h2
             class="text-[24px] font-modernephemera text-main-blue leading-[24px]"
           >
             Enter your follower count <br />
             to see how much you can earn per post
           </h2>
+          <div class="slider-container">
+            <label for="followers-slider"></label>
+            <div class="slider-wrapper">
+              <div id="slider-tooltip" class="slider-tooltip">0</div>
+              <input
+                type="range"
+                id="followers-slider"
+                min="0"
+                max="1000000"
+                step="1"
+                value="0"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
