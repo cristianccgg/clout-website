@@ -64,3 +64,44 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inicializa valores en carga de la página
   updateValues();
 });
+
+const ecommerceBtn = document.getElementById("ecommerce-btn");
+const saasBtn = document.getElementById("saas-btn");
+const appsBtn = document.getElementById("apps-btn");
+const benefitsContainer = document.getElementById("benefits-container");
+
+const ecommerceBenefits = `
+        <h1>30% higher conversion <br class="lg:hidden" /> rates than traditional marketing</h1>
+        <h1>
+          Make fans <br class="lg:hidden" />not just customers 
+        </h1>
+        <h1>Lower content costs</h1>
+      </div>`;
+
+const saasBenefits = `
+        <h1>37% higher retention <br class="lg:hidden" /> than traditional channels</h1>
+        <h1>
+          Lower CAC
+        </h1>
+        <h1>Build trust</h1>
+      </div>`;
+
+const appsBenefits = `<h1>37% higher retention</h1>
+        <h1>
+          Control your CPI <br class="lg:hidden" />(Cost Per Install)
+          <br class="lg:hidden" />
+          and reduce wasted spend
+        </h1>
+        <h1>30% higher conversion rates</h1>`;
+
+ecommerceBtn.addEventListener("click", () => {
+  benefitsContainer.innerHTML = ecommerceBenefits;
+});
+
+saasBtn.addEventListener("click", () => {
+  benefitsContainer.innerHTML = saasBenefits;
+});
+
+appsBtn.addEventListener("click", () => {
+  benefitsContainer.innerHTML = appsBenefits;
+});
