@@ -574,6 +574,10 @@ video {
   right: -88px;
 }
 
+.-top-\[50px\] {
+  top: -50px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -804,18 +808,6 @@ video {
 
 .top-full {
   top: 100%;
-}
-
-.-top-\[200px\] {
-  top: -200px;
-}
-
-.-top-\[100px\] {
-  top: -100px;
-}
-
-.-top-\[50px\] {
-  top: -50px;
 }
 
 .-z-10 {
@@ -1158,16 +1150,12 @@ video {
   width: 100%;
 }
 
-.w-\[80\%\] {
-  width: 80%;
+.w-\[428px\] {
+  width: 428px;
 }
 
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
+.w-\[420px\] {
+  width: 420px;
 }
 
 .max-w-\[1440px\] {
@@ -1178,16 +1166,8 @@ video {
   max-width: 60%;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
+.max-w-\[428px\] {
+  max-width: 428px;
 }
 
 .rotate-\[6deg\] {
@@ -1289,6 +1269,10 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-main-blue {
@@ -1746,6 +1730,11 @@ video {
   position: relative;
 }
 
+.slider-label {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .slider-wrapper {
   position: relative;
   width: 100%;
@@ -1765,6 +1754,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   border: 1px dashed rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -1781,8 +1771,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 .slider-tooltip {
   position: absolute;
-  top: -60px;
-  /* Ajusta según la altura del pulgar */
+  top: -69.37px;
+  /* Ajustado para incluir el espacio de 9.37px */
   left: 50%;
   transform: translateX(-50%);
   background: white;
@@ -1791,13 +1781,32 @@ input[type="range"]::-webkit-slider-thumb {
   white-space: nowrap;
   font-size: 12px;
   text-align: center;
-  width: 67.3px;
+  width: auto;
   height: 59.7px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center !important;
   justify-content: center !important;
+  border: 1px solid #8899aa;
+  z-index: 1;
+  /* Asegurarse de que el tooltip esté encima del slider */
+}
+
+/* Cuadrado girado como flecha hacia abajo */
+
+.slider-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  /* Ajusta según el espacio necesario */
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-bottom: 1px solid #8899aa;
+  border-right: 1px solid #8899aa;
 }
 
 .tooltip-earnings {
@@ -1810,9 +1819,72 @@ input[type="range"]::-webkit-slider-thumb {
 
 .tooltip-followers {
   font-family: "Jost", sans-serif;
-  font-size: 8px !important;
+  font-size: 10px !important;
   font-weight: 400;
   color: black;
+}
+
+/* Agregar valores "0" y "1M" en línea con la línea del slider */
+
+.slider-container::before,
+.slider-container::after {
+  content: attr(data-label);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  line-height: 20px;
+  font-family: "Jost", sans-serif;
+  padding: 5px 0px;
+  /* Espacio a los lados del texto */
+}
+
+.slider-container::before {
+  content: "0";
+  left: -30px;
+  /* Ajustar según el espacio necesario */
+}
+
+.slider-container::after {
+  content: "1M";
+  right: -30px;
+  /* Ajustar según el espacio necesario */
+}
+
+.hover\:border-2:hover {
+  border-width: 2px;
+}
+
+.hover\:bg-\[\#E3F5F9\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 245 249 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#28587B\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(40 88 123 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .sm\:text-\[42px\] {
+    font-size: 42px;
+  }
+
+  .sm\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .sm\:leading-\[42px\] {
+    line-height: 42px;
+  }
+
+  .sm\:leading-\[18px\] {
+    line-height: 18px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1923,6 +1995,18 @@ input[type="range"]::-webkit-slider-thumb {
 
   .lg\:mt-\[241px\] {
     margin-top: 241px;
+  }
+
+  .lg\:ml-52 {
+    margin-left: 13rem;
+  }
+
+  .lg\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .lg\:ml-14 {
+    margin-left: 3.5rem;
   }
 
   .lg\:block {
@@ -2073,8 +2157,36 @@ input[type="range"]::-webkit-slider-thumb {
     width: 980px;
   }
 
+  .lg\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .lg\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .lg\:w-\[520px\] {
+    width: 520px;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .lg\:w-\[380px\] {
+    width: 380px;
+  }
+
+  .lg\:w-\[1440px\] {
+    width: 1440px;
+  }
+
   .lg\:max-w-\[1320px\] {
     max-width: 1320px;
+  }
+
+  .lg\:max-w-\[1440px\] {
+    max-width: 1440px;
   }
 
   .lg\:flex-row {
@@ -2115,6 +2227,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .lg\:gap-\[96px\] {
     gap: 96px;
+  }
+
+  .lg\:gap-\[50px\] {
+    gap: 50px;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -2230,6 +2346,18 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 64px;
   }
 
+  .lg\:text-\[44px\] {
+    font-size: 44px;
+  }
+
+  .lg\:text-\[34px\] {
+    font-size: 34px;
+  }
+
+  .lg\:text-\[16px\] {
+    font-size: 16px;
+  }
+
   .lg\:leading-\[24px\] {
     line-height: 24px;
   }
@@ -2257,14 +2385,148 @@ input[type="range"]::-webkit-slider-thumb {
   .lg\:leading-\[64px\] {
     line-height: 64px;
   }
+
+  .lg\:leading-\[44px\] {
+    line-height: 44px;
+  }
+
+  .lg\:leading-\[16px\] {
+    line-height: 16px;
+  }
 }
 
 @media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:left-\[199\.12px\] {
+    left: 199.12px;
+  }
+
+  .xl\:right-\[63\.12px\] {
+    right: 63.12px;
+  }
+
+  .xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .xl\:ms-0 {
+    margin-inline-start: 0px;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
   .xl\:block {
     display: block;
   }
 
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:hidden {
     display: none;
+  }
+
+  .xl\:h-\[168px\] {
+    height: 168px;
+  }
+
+  .xl\:h-\[137\.51px\] {
+    height: 137.51px;
+  }
+
+  .xl\:h-\[167\.51px\] {
+    height: 167.51px;
+  }
+
+  .xl\:h-\[820px\] {
+    height: 820px;
+  }
+
+  .xl\:h-full {
+    height: 100%;
+  }
+
+  .xl\:w-\[720px\] {
+    width: 720px;
+  }
+
+  .xl\:w-\[420px\] {
+    width: 420px;
+  }
+
+  .xl\:w-\[532\.6px\] {
+    width: 532.6px;
+  }
+
+  .xl\:max-w-\[1440px\] {
+    max-width: 1440px;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:gap-\[96px\] {
+    gap: 96px;
+  }
+
+  .xl\:py-\[17\.75px\] {
+    padding-top: 17.75px;
+    padding-bottom: 17.75px;
+  }
+
+  .xl\:pt-\[48px\] {
+    padding-top: 48px;
+  }
+
+  .xl\:text-start {
+    text-align: start;
+  }
+
+  .xl\:text-\[64px\] {
+    font-size: 64px;
+  }
+
+  .xl\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .xl\:text-\[20\.71px\] {
+    font-size: 20.71px;
+  }
+
+  .xl\:text-\[29\.59px\] {
+    font-size: 29.59px;
+  }
+
+  .xl\:leading-\[64px\] {
+    line-height: 64px;
+  }
+
+  .xl\:leading-\[24px\] {
+    line-height: 24px;
+  }
+
+  .xl\:leading-\[35\.51px\] {
+    line-height: 35.51px;
   }
 }
