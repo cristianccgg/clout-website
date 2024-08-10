@@ -598,8 +598,8 @@ video {
   left: 29.21px;
 }
 
-.left-\[313px\] {
-  left: 313px;
+.left-\[402px\] {
+  left: 402px;
 }
 
 .left-\[49px\] {
@@ -642,16 +642,16 @@ video {
   right: 309.5px;
 }
 
-.right-\[313px\] {
-  right: 313px;
-}
-
 .right-\[350\.31px\] {
   right: 350.31px;
 }
 
 .right-\[401\.42px\] {
   right: 401.42px;
+}
+
+.right-\[403px\] {
+  right: 403px;
 }
 
 .right-\[46\.96px\] {
@@ -846,6 +846,10 @@ video {
   margin-bottom: 60px;
 }
 
+.mb-\[11px\] {
+  margin-bottom: 11px;
+}
+
 .mb-\[12px\] {
   margin-bottom: 12px;
 }
@@ -856,10 +860,6 @@ video {
 
 .mb-\[60px\] {
   margin-bottom: 60px;
-}
-
-.mb-\[62px\] {
-  margin-bottom: 62px;
 }
 
 .ms-\[20px\] {
@@ -1022,6 +1022,10 @@ video {
   height: 487.18px;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .h-\[537px\] {
   height: 537px;
 }
@@ -1032,6 +1036,10 @@ video {
 
 .h-\[85\.6px\] {
   height: 85.6px;
+}
+
+.h-\[86\.6px\] {
+  height: 86.6px;
 }
 
 .h-\[88px\] {
@@ -1146,6 +1154,14 @@ video {
   width: 48px;
 }
 
+.w-\[50\.3px\] {
+  width: 50.3px;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1189,6 +1205,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -1711,7 +1731,7 @@ video {
 }
 
 .slider-container {
-  width: 100%;
+  width: 80%;
   max-width: 542px;
   position: relative;
   margin: 0 auto;
@@ -2017,6 +2037,18 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 96px;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:mb-\[4px\] {
+    margin-bottom: 4px;
+  }
+
+  .lg\:mb-\[62px\] {
+    margin-bottom: 62px;
+  }
+
   .lg\:ml-14 {
     margin-left: 3.5rem;
   }
@@ -2041,8 +2073,32 @@ input[type="range"]::-webkit-slider-thumb {
     display: none;
   }
 
+  .lg\:h-\[117\.06px\] {
+    height: 117.06px;
+  }
+
+  .lg\:h-\[120px\] {
+    height: 120px;
+  }
+
+  .lg\:h-\[121px\] {
+    height: 121px;
+  }
+
+  .lg\:h-\[128px\] {
+    height: 128px;
+  }
+
+  .lg\:h-\[138px\] {
+    height: 138px;
+  }
+
   .lg\:h-\[213\.16px\] {
     height: 213.16px;
+  }
+
+  .lg\:h-\[72px\] {
+    height: 72px;
   }
 
   .lg\:h-\[772px\] {
@@ -2051,10 +2107,6 @@ input[type="range"]::-webkit-slider-thumb {
 
   .lg\:h-\[865px\] {
     height: 865px;
-  }
-
-  .lg\:h-\[86px\] {
-    height: 86px;
   }
 
   .lg\:max-h-full {
@@ -2089,12 +2141,12 @@ input[type="range"]::-webkit-slider-thumb {
     width: 151.15px;
   }
 
-  .lg\:w-\[266\.3px\] {
-    width: 266.3px;
+  .lg\:w-\[276px\] {
+    width: 276px;
   }
 
-  .lg\:w-\[266px\] {
-    width: 266px;
+  .lg\:w-\[360px\] {
+    width: 360px;
   }
 
   .lg\:w-\[380px\] {
@@ -2103,10 +2155,6 @@ input[type="range"]::-webkit-slider-thumb {
 
   .lg\:w-\[482\.67px\] {
     width: 482.67px;
-  }
-
-  .lg\:w-\[50px\] {
-    width: 50px;
   }
 
   .lg\:w-\[520px\] {
@@ -2123,6 +2171,18 @@ input[type="range"]::-webkit-slider-thumb {
 
   .lg\:w-\[639px\] {
     width: 639px;
+  }
+
+  .lg\:w-\[68px\] {
+    width: 68px;
+  }
+
+  .lg\:w-\[72px\] {
+    width: 72px;
+  }
+
+  .lg\:w-\[75px\] {
+    width: 75px;
   }
 
   .lg\:w-\[774px\] {
@@ -2185,10 +2245,6 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 50px;
   }
 
-  .lg\:gap-\[70px\] {
-    gap: 70px;
-  }
-
   .lg\:gap-\[90px\] {
     gap: 90px;
   }
@@ -2229,8 +2285,8 @@ input[type="range"]::-webkit-slider-thumb {
     padding-bottom: 96px;
   }
 
-  .lg\:pe-\[5\.94px\] {
-    padding-inline-end: 5.94px;
+  .lg\:pe-\[8px\] {
+    padding-inline-end: 8px;
   }
 
   .lg\:ps-\[64\.2px\] {
@@ -2245,12 +2301,20 @@ input[type="range"]::-webkit-slider-thumb {
     padding-top: 132px;
   }
 
+  .lg\:pt-\[16px\] {
+    padding-top: 16px;
+  }
+
   .lg\:pt-\[48px\] {
     padding-top: 48px;
   }
 
   .lg\:text-start {
     text-align: start;
+  }
+
+  .lg\:text-\[12px\] {
+    font-size: 12px;
   }
 
   .lg\:text-\[16px\] {
@@ -2287,6 +2351,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .lg\:leading-\[16px\] {
     line-height: 16px;
+  }
+
+  .lg\:leading-\[20px\] {
+    line-height: 20px;
   }
 
   .lg\:leading-\[24px\] {

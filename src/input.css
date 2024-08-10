@@ -31,7 +31,7 @@
 }
 
 .slider-container {
-  width: 100%;
+  width: 80%;
   max-width: 542px;
   position: relative;
   margin: 0 auto; /* Centra el contenedor horizontalmente */
