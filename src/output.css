@@ -1828,6 +1828,16 @@ input[type="range"]::-webkit-slider-thumb {
   /* Ajustar según el espacio necesario */
 }
 
+.active {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(40 88 123 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 245 249 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(40 88 123 / var(--tw-text-opacity));
+}
+
 @media screen and (min-width: 1280px) {
   .slider-tooltip {
     top: -105.37px;

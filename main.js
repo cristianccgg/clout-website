@@ -71,37 +71,55 @@ const appsBtn = document.getElementById("apps-btn");
 const benefitsContainer = document.getElementById("benefits-container");
 
 const ecommerceBenefits = `
-        <h1>30% higher conversion <br class="lg:hidden" /> rates than traditional marketing</h1>
-        <h1>
-          Make fans <br class="lg:hidden" />not just customers 
-        </h1>
-        <h1>Lower content costs</h1>
-      </div>`;
+      <h1>30% higher conversion <br class="lg:hidden" /> rates than traditional marketing</h1>
+      <h1>
+        Make fans <br class="lg:hidden" />not just customers 
+      </h1>
+      <h1>Lower content costs</h1>
+    </div>`;
 
 const saasBenefits = `
-        <h1>37% higher retention <br class="lg:hidden" /> than traditional channels</h1>
-        <h1>
-          Lower CAC
-        </h1>
-        <h1>Build trust</h1>
-      </div>`;
+      <h1>37% higher retention <br class="lg:hidden" /> than traditional channels</h1>
+      <h1>
+        Lower CAC
+      </h1>
+      <h1>Build trust</h1>
+    </div>`;
 
 const appsBenefits = `<h1>37% higher retention</h1>
-        <h1>
-          Control your CPI <br class="lg:hidden" />(Cost Per Install)
-          <br class="lg:hidden" />
-          and reduce wasted spend
-        </h1>
-        <h1>30% higher conversion rates</h1>`;
+      <h1>
+        Control your CPI <br class="lg:hidden" />(Cost Per Install)
+        <br class="lg:hidden" />
+        and reduce wasted spend
+      </h1>
+      <h1>30% higher conversion rates</h1>`;
+
+const setActiveButton = (button) => {
+  // Remove 'active' class from all buttons
+  ecommerceBtn.classList.remove("active");
+  saasBtn.classList.remove("active");
+  appsBtn.classList.remove("active");
+
+  // Add 'active' class to the selected button
+  button.classList.add("active");
+};
 
 ecommerceBtn.addEventListener("click", () => {
   benefitsContainer.innerHTML = ecommerceBenefits;
+  setActiveButton(ecommerceBtn);
 });
 
 saasBtn.addEventListener("click", () => {
   benefitsContainer.innerHTML = saasBenefits;
+  setActiveButton(saasBtn);
 });
 
 appsBtn.addEventListener("click", () => {
   benefitsContainer.innerHTML = appsBenefits;
+  setActiveButton(appsBtn);
+});
+
+// Trigger click on the first button to display its content and style as active on page load
+document.addEventListener("DOMContentLoaded", () => {
+  ecommerceBtn.click();
 });

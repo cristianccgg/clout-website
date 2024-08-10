@@ -142,6 +142,10 @@ input[type="range"]::-webkit-slider-thumb {
   right: -30px; /* Ajustar según el espacio necesario */
 }
 
+.active {
+  @apply bg-[#E3F5F9] border-2 border-[#28587B] text-[#28587B];
+}
+
 @media screen and (min-width: 1280px) {
   .slider-tooltip {
     top: -105.37px;
