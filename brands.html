@@ -381,6 +381,19 @@
     <section id="form-container"></section>
     <section id="footer-container"></section>
 
+    <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "B_RYxrhMSwInYIphw",
+        });
+      })();
+    </script>
+    <script src="form.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

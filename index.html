@@ -70,7 +70,6 @@
     </section>
     <section class="bg-custom-radial-gradient lg:h-[772px] hidden xl:block">
       <div class="max-w-[1440px] relative mx-auto">
-        <!-- Imágenes en el fondo -->
         <img
           class="absolute top-[191.19px] right-[55.29px]"
           src="src/images/home-imgs/phones desktop/line-right-side.png"
@@ -87,21 +86,18 @@
           alt=""
         />
 
-        <!-- Imagen base sobre la que quieres superponer -->
         <img
           class="absolute z-20 h-[371.16px] right-[475.27px] top-[150.41px]"
           src="src/images/home-imgs/phones desktop/Frame 631670.png"
           alt="chime"
         />
 
-        <!-- Imagen que superpondrá la imagen "chime" -->
         <img
           class="absolute w-[183.22px] h-[85.6px] z-30 right-[490.27px] top-[428px]"
           src="src/images/home-imgs/Frame 631669.png"
           alt="overlay-image"
         />
 
-        <!-- Otras imágenes y contenido -->
         <img
           class="h-[480.51px] w-[236px] absolute right-[698.79px] top-[189.87px]"
           src="src/images/home-imgs/phones desktop/Flat iPhone.png"
@@ -113,7 +109,6 @@
           alt=""
         />
 
-        <!-- Contenido adicional -->
         <div
           class="bg-white absolute left-[29.21px] top-[556.77px] flex py-[12px] ps-[16px] w-[360px] h-[88px] gap-[16px] rounded-[24px] mx-auto"
         >
@@ -137,7 +132,6 @@
           </div>
         </div>
 
-        <!-- Más contenido -->
         <div
           class="bg-white absolute top-[171px] left-[75.45px] flex items-center py-[12px] ps-[16px] w-[360px] h-[88px] gap-[16px] rounded-[24px]"
         >
@@ -159,7 +153,6 @@
           </div>
         </div>
 
-        <!-- Más contenido -->
         <div
           class="bg-white absolute top-[469.97px] right-[46.96px] flex py-[12px] ps-[16px] w-[360px] h-[88px] gap-[16px] rounded-[24px]"
         >
@@ -181,7 +174,6 @@
           </div>
         </div>
 
-        <!-- Más contenido -->
         <div
           class="bg-white absolute top-[43.94px] right-[27.73px] flex items-center py-[12px] ps-[16px] w-[360px] h-[88px] gap-[16px] rounded-[24px]"
         >
@@ -277,11 +269,6 @@
               src="src/images/home-imgs/2nd-phone.png"
               alt=""
             />
-            <!-- <img
-              class="absolute top-[48.87px] -right-[31.4px]"
-              src="src/images/home-imgs/second phone/Frame 631670.png"
-              alt=""
-            /> -->
           </div>
           <div
             class="bg-white mt-[170.25px] flex py-[12px] ps-[16px] w-[360px] h-[88px] gap-[16px] rounded-[24px] mx-auto"
@@ -397,6 +384,19 @@
     <section id="form-container"></section>
     <section id="footer-container"></section>
 
+    <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "B_RYxrhMSwInYIphw",
+        });
+      })();
+    </script>
+    <script src="form.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

@@ -34,9 +34,9 @@
   width: 80%;
   max-width: 542px;
   position: relative;
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  margin: 0 auto;
   display: flex;
-  justify-content: center; /* Centra horizontalmente los elementos */
+  justify-content: center;
 }
 
 .slider-wrapper {
@@ -66,7 +66,7 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   position: relative;
   z-index: 1;
-  margin-top: -10px; /* Center the thumb vertically */
+  margin-top: -10px;
 }
 
 .slider-tooltip {
@@ -92,7 +92,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .tooltip-earnings {
-  font-family: "ws_curio", sans-serif; /* Mantiene la fuente original */
+  font-family: "ws_curio", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #48a9d1;
@@ -134,12 +134,12 @@ input[type="range"]::-webkit-slider-thumb {
 
 .slider-container::before {
   content: "0";
-  left: -30px; /* Ajustar según el espacio necesario */
+  left: -30px;
 }
 
 .slider-container::after {
   content: "1M";
-  right: -30px; /* Ajustar según el espacio necesario */
+  right: -30px;
 }
 
 .active {
@@ -159,7 +159,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   .tooltip-earnings {
-    font-family: "ws_curio", sans-serif; /* Mantiene la fuente original */
+    font-family: "ws_curio", sans-serif;
     font-size: 36px;
     font-weight: 400;
     color: #48a9d1;
@@ -181,6 +181,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   input[type="range"]::-webkit-slider-thumb {
-    margin-top: -15px; /* Center the thumb vertically */
+    margin-top: -15px;
   }
 }

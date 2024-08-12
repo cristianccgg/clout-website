@@ -119,7 +119,6 @@ appsBtn.addEventListener("click", () => {
   setActiveButton(appsBtn);
 });
 
-// Trigger click on the first button to display its content and style as active on page load
 document.addEventListener("DOMContentLoaded", () => {
   ecommerceBtn.click();
 });

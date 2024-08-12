@@ -13,26 +13,37 @@
       </p>
     </div>
     <form
+      id="contact-form"
       class="lg:my-[96px] flex flex-col items-center gap-[16px] w-[358px] mx-auto mt-[40px]"
-      action="#"
+      onsubmit="sendMail(event)"
     >
       <input
+        id="name"
         class="w-full border-main-blue border-2 rounded-md h-[40px] px-[8px] py-[12px]"
         type="text"
+        name="name"
         placeholder="Name"
+        required
       />
       <input
+        id="email"
         class="w-full border-main-blue border-2 rounded-md h-[40px] px-[8px] py-[12px]"
-        type="text"
+        type="email"
+        name="email"
         placeholder="Email"
+        required
       />
       <textarea
+        id="message"
         class="w-full border-main-blue border-2 rounded-md h-[150px] p-2 resize-none"
+        name="message"
         placeholder="Note"
+        required
       ></textarea>
 
       <button
         class="border-main-blue border-2 w-[358px] h-[44.06px] rounded-full text-btns font-modernephemera"
+        type="submit"
       >
         CONTACT US
       </button>
